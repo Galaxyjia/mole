@@ -1,6 +1,7 @@
 # mole
 
 A new Flutter package.
+一个短小精悍的Flutter游戏框架
 
 ## Getting Started
 
