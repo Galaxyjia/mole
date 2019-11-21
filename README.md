@@ -1,7 +1,7 @@
 # mole
 
 A new Flutter package.
-一个短小精悍的Flutter游戏框架
+一个短小精悍的Flutter 2D游戏框架，吸取pixi,phaser,unity的相关思想
 
 ## Getting Started
 
