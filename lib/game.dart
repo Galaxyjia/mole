@@ -8,15 +8,18 @@ import 'package:flutter/widgets.dart';
 import 'math/Point.dart';
 
 abstract class Game {
+  ///回调函数
   Function callback;
 
   final builder = WidgetBuilder();
 
   // void update(double t);
+  ///主循环
   void tickStart(callback){
     this.callback = callback;
   }
 
+  ///渲染
   void render(Canvas canvas);
 
   void resize(Size size) {}
@@ -31,7 +34,8 @@ abstract class Game {
 class WidgetBuilder {
   Offset offset = Offset.zero;
   Widget build(Game game) => Directionality(
-      textDirection: TextDirection.ltr, child: EmbeddedGameWidget(game));
+      textDirection: TextDirection.ltr, 
+      child: EmbeddedGameWidget(game));
 }
 
 class EmbeddedGameWidget extends LeafRenderObjectWidget {
