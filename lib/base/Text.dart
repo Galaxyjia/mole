@@ -15,9 +15,9 @@ import '../display/DisplayObject.dart';
 // }
 
 class Text extends DisplayObject{
-    String text;
+    String text='';
 
-    Text(this.text):super();
+    Text({this.text}):super();
 
     ui.Paragraph draw(String text, { double fontSize = 24.0, Color color = Colors.black, fontFamily: 'Arial', double maxWidth = 180.0 }) {
         ui.ParagraphBuilder paragraph = new ui.ParagraphBuilder(new ui.ParagraphStyle());
